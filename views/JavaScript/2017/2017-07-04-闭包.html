@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript闭包 | zhairuihao的blog 😀😀😀😀😀😀</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link 0="l" 1="i" 2="n" 3="k">[object Object]
+    <meta name="description" content="know more and do better">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.4b594c7e.css" as="style"><link rel="preload" href="/assets/js/app.68da75db.js" as="script"><link rel="preload" href="/assets/js/3.0d533a50.js" as="script"><link rel="preload" href="/assets/js/1.0c609987.js" as="script"><link rel="preload" href="/assets/js/11.9864ea52.js" as="script"><link rel="prefetch" href="/assets/js/10.3316d455.js"><link rel="prefetch" href="/assets/js/12.f53a01ae.js"><link rel="prefetch" href="/assets/js/13.582b5c22.js"><link rel="prefetch" href="/assets/js/14.85fe97fa.js"><link rel="prefetch" href="/assets/js/15.fd78a25a.js"><link rel="prefetch" href="/assets/js/16.a0698a19.js"><link rel="prefetch" href="/assets/js/17.19bd63bc.js"><link rel="prefetch" href="/assets/js/18.e7b3862e.js"><link rel="prefetch" href="/assets/js/19.d8b4a696.js"><link rel="prefetch" href="/assets/js/20.3f9b28b0.js"><link rel="prefetch" href="/assets/js/21.0f7a9bfd.js"><link rel="prefetch" href="/assets/js/22.c31c7474.js"><link rel="prefetch" href="/assets/js/23.e6ae06b5.js"><link rel="prefetch" href="/assets/js/24.31a5e7f1.js"><link rel="prefetch" href="/assets/js/25.b96671c3.js"><link rel="prefetch" href="/assets/js/26.9c90cef5.js"><link rel="prefetch" href="/assets/js/27.abf8db6f.js"><link rel="prefetch" href="/assets/js/28.a66eb643.js"><link rel="prefetch" href="/assets/js/29.36aa3059.js"><link rel="prefetch" href="/assets/js/30.121d2d6b.js"><link rel="prefetch" href="/assets/js/31.12c977b8.js"><link rel="prefetch" href="/assets/js/32.617f074f.js"><link rel="prefetch" href="/assets/js/33.49fd499f.js"><link rel="prefetch" href="/assets/js/34.5bd44926.js"><link rel="prefetch" href="/assets/js/35.e2815782.js"><link rel="prefetch" href="/assets/js/36.faa7a5f7.js"><link rel="prefetch" href="/assets/js/4.ab49d4f3.js"><link rel="prefetch" href="/assets/js/5.e19d1c20.js"><link rel="prefetch" href="/assets/js/6.5e86b234.js"><link rel="prefetch" href="/assets/js/7.df04ee3d.js"><link rel="prefetch" href="/assets/js/8.e01c6469.js"><link rel="prefetch" href="/assets/js/9.01847c33.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4b594c7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>zhairuihao的blog 😀😀😀😀😀😀</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhairuihao</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="zhairuihao的blog 😀😀😀😀😀😀" class="logo"> <span class="site-name">zhairuihao的blog 😀😀😀😀😀😀</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/源码分析/" class="nav-link"><i class="iconfont undefined"></i>
+  源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="iconfont undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/spring/" class="nav-link"><i class="iconfont undefined"></i>
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/并发/" class="nav-link"><i class="iconfont undefined"></i>
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作总结/" class="nav-link"><i class="iconfont undefined"></i>
+  工作总结
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码片段/" class="nav-link"><i class="iconfont undefined"></i>
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JDK/" class="nav-link"><i class="iconfont undefined"></i>
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="iconfont undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travis/" class="nav-link"><i class="iconfont undefined"></i>
+  Travis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhairuihao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://zhairuihao.show/my-story/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  我的故事
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-b038cec6><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-b038cec6> <h3 class="name" data-v-b038cec6>
+    zhairuihao
+  </h3> <div class="num" data-v-b038cec6><div data-v-b038cec6><h3 data-v-b038cec6>22</h3> <h6 data-v-b038cec6>Article</h6></div> <div data-v-b038cec6><h3 data-v-b038cec6>21</h3> <h6 data-v-b038cec6>Tag</h6></div></div> <hr data-v-b038cec6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/源码分析/" class="nav-link"><i class="iconfont undefined"></i>
+  源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="iconfont undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/spring/" class="nav-link"><i class="iconfont undefined"></i>
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/并发/" class="nav-link"><i class="iconfont undefined"></i>
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作总结/" class="nav-link"><i class="iconfont undefined"></i>
+  工作总结
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码片段/" class="nav-link"><i class="iconfont undefined"></i>
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JDK/" class="nav-link"><i class="iconfont undefined"></i>
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="iconfont undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travis/" class="nav-link"><i class="iconfont undefined"></i>
+  Travis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhairuihao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://zhairuihao.show/my-story/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  我的故事
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript闭包</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html#_1-闭包-closure-demo" class="sidebar-link">1. 闭包(closure) demo</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html#_2-模块化" class="sidebar-link">2. 模块化</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html#_3-函数重载" class="sidebar-link">3. 函数重载</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html#_4-結束語" class="sidebar-link">4. 結束語</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>JavaScript闭包</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhairuihao</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>JavaScript闭包</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>zhairuihao</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2017-07-04 12:00:00</span></i> <i class="iconfont reco-eye" data-v-484a899e><span id="/views/JavaScript/2017/2017-07-04-%E9%97%AD%E5%8C%85.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-484a899e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      JavaScript
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。
+要理解闭包，首先必须理解Javascript特殊的变量作用域。
+变量的作用域无非就是两种：全局变量和局部变量。
+Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。</p> <h2 id="_1-闭包-closure-demo"><a href="#_1-闭包-closure-demo" class="header-anchor">#</a> 1. 闭包(closure) demo</h2> <p>对于闭包(closure)，当外部函数返回之后，内部函数依然可以访问外部函数的变量。
+代码中，外部函数f1只执行了一次，变量N设为0，并将内部函数f2赋值给了变量result。
+由于外部函数f1已经执行完毕，其内部变量N应该在内存中被清除，
+然而事实并不是这样：我们每次调用result的时候，
+发现变量N一直在内存中，并且在累加。为什么呢？这就是闭包的神奇之处了！</p> <div class="language- extra-class"><pre><code>function f1(){
+    var N = 0; // N是f1函数的局部变量
+
+    function f2() // f2是f1函数的内部函数，是闭包
+    {
+        N += 1; // 内部函数f2中使用了外部函数f1中的变量N
+        console.log(N);
+    }
+    return f2;
+}
+var result = f1();
+result(); // 输出1result(); // 输出2result(); // 输出3
+</code></pre></div><h2 id="_2-模块化"><a href="#_2-模块化" class="header-anchor">#</a> 2. 模块化</h2> <p>JavaScript并非模块化编程语言，至少ES6落地之前都不是。然而对于一个复杂的Web应用，模块化编程是一个最基本的要求。
+这时，可以使用立即执行函数来实现模块化，正如很多JS库比如jQuery以及我们Fundebug都是这样实现的。</p> <p>var module = (function() {
+var N = 5;
+function print(x) {
+console.log(&quot;The result is: &quot; + x);
+}
+function add(a) {
+var x = a + N;
+print(x);
+}
+return {
+description: &quot;This is description&quot;,
+add: add
+};
+})();
+console.log(module.description); // 输出&quot;this is description&quot;
+module.add(5); // 输出“The result is: 10”</p> <h2 id="_3-函数重载"><a href="#_3-函数重载" class="header-anchor">#</a> 3. 函数重载</h2> <p>所谓函数重载(method overloading)，就是函数名称一样，但是输入输出不一样。或者说，允许某个函数有各种不同输入，根据不同的输入，返回不同的结果。凭直觉，函数重载可以通过if...else或者switch实现，这就不去管它了。jQuery之父John Resig提出了一个非常巧(bian)妙(tai)的方法，利用了闭包。从效果上来说，people对象的find方法允许3种不同的输入:0个参数时，返回所有人名；1个参数时，根据firstName查找人名并返回；2个参数时，根据完整的名称查找人名并返回。难点在于，people.find只能绑定一个函数，那它为何可以处理3种不同的输入呢？它不可能同时绑定3个函数find0,find1与find2啊！这里的关键在于old属性。由addMethod函数的调用顺序可知，people.find最终绑定的是find2函数。然而，在绑定find2时，old为find1；同理，绑定find1时，old为find0。3个函数find0,find1与find2就这样通过闭包链接起来了。根据addMethod的逻辑，当f.length与arguments.length不匹配时，就会去调用old，直到匹配为止。</p> <div class="language- extra-class"><pre><code>function addMethod(object, name, f){
+    var old = object[name];　　
+    object[name] = function()    {
+         // f.length为函数定义时的参数个数
+        // arguments.length为函数调用时的参数个数　　　　
+        if (f.length === arguments.length)
+        {　　
+            return f.apply(this, arguments);　　　　
+        } else if (typeof old === &quot;function&quot;)
+        {
+            return old.apply(this, arguments);　　　　
+        }　　
+    };
+}
+// 不传参数时，返回所有name
+function find0(){　
+    return this.names;
+}
+// 传一个参数时，返回firstName匹配的name
+function find1(firstName){　　
+    var result = [];　　
+    for (var i = 0; i &lt; this.names.length; i++)
+    {　　　　
+        if (this.names[i].indexOf(firstName) === 0)
+        {　　　　　　
+            result.push(this.names[i]);　　　　
+        }　　
+    }　　
+    return result;
+}// 传两个参数时，返回firstName和lastName都匹配的name
+function find2(firstName, lastName){　
+    var result = [];　　
+    for (var i = 0; i &lt; this.names.length; i++)
+    {　　　　
+        if (this.names[i] === (firstName + &quot; &quot; + lastName))
+        {　　　　　　
+            result.push(this.names[i]);　　　　
+        }　　
+    }　　
+    return result;
+}
+var people = {　　
+    names: [&quot;Dean Edwards&quot;, &quot;Alex Russell&quot;, &quot;Dean Tom&quot;]
+};
+
+
+addMethod(people, &quot;find&quot;, find0);
+addMethod(people, &quot;find&quot;, find1);
+addMethod(people, &quot;find&quot;, find2);
+console.log(people.find()); // 输出[&quot;Dean Edwards&quot;, &quot;Alex Russell&quot;, &quot;Dean Tom&quot;]
+console.log(people.find(&quot;Dean&quot;)); // 输出[&quot;Dean Edwards&quot;, &quot;Dean Tom&quot;]
+console.log(people.find(&quot;Dean&quot;, &quot;Edwards&quot;)); // 输出[&quot;Dean Edwards&quot;]
+</code></pre></div><h2 id="_4-結束語"><a href="#_4-結束語" class="header-anchor">#</a> 4. 結束語</h2> <p>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/7/2020, 3:12:30 AM</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.68da75db.js" defer></script><script src="/assets/js/3.0d533a50.js" defer></script><script src="/assets/js/1.0c609987.js" defer></script><script src="/assets/js/11.9864ea52.js" defer></script>
+  </body>
+</html>

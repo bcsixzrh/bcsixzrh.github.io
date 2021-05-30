@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Javascript模块化编程 | zhairuihao的blog 😀😀😀😀😀😀</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link 0="l" 1="i" 2="n" 3="k">[object Object]
+    <meta name="description" content="know more and do better">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.4b594c7e.css" as="style"><link rel="preload" href="/assets/js/app.68da75db.js" as="script"><link rel="preload" href="/assets/js/3.0d533a50.js" as="script"><link rel="preload" href="/assets/js/1.0c609987.js" as="script"><link rel="preload" href="/assets/js/12.f53a01ae.js" as="script"><link rel="prefetch" href="/assets/js/10.3316d455.js"><link rel="prefetch" href="/assets/js/11.9864ea52.js"><link rel="prefetch" href="/assets/js/13.582b5c22.js"><link rel="prefetch" href="/assets/js/14.85fe97fa.js"><link rel="prefetch" href="/assets/js/15.fd78a25a.js"><link rel="prefetch" href="/assets/js/16.a0698a19.js"><link rel="prefetch" href="/assets/js/17.19bd63bc.js"><link rel="prefetch" href="/assets/js/18.e7b3862e.js"><link rel="prefetch" href="/assets/js/19.d8b4a696.js"><link rel="prefetch" href="/assets/js/20.3f9b28b0.js"><link rel="prefetch" href="/assets/js/21.0f7a9bfd.js"><link rel="prefetch" href="/assets/js/22.c31c7474.js"><link rel="prefetch" href="/assets/js/23.e6ae06b5.js"><link rel="prefetch" href="/assets/js/24.31a5e7f1.js"><link rel="prefetch" href="/assets/js/25.b96671c3.js"><link rel="prefetch" href="/assets/js/26.9c90cef5.js"><link rel="prefetch" href="/assets/js/27.abf8db6f.js"><link rel="prefetch" href="/assets/js/28.a66eb643.js"><link rel="prefetch" href="/assets/js/29.36aa3059.js"><link rel="prefetch" href="/assets/js/30.121d2d6b.js"><link rel="prefetch" href="/assets/js/31.12c977b8.js"><link rel="prefetch" href="/assets/js/32.617f074f.js"><link rel="prefetch" href="/assets/js/33.49fd499f.js"><link rel="prefetch" href="/assets/js/34.5bd44926.js"><link rel="prefetch" href="/assets/js/35.e2815782.js"><link rel="prefetch" href="/assets/js/36.faa7a5f7.js"><link rel="prefetch" href="/assets/js/4.ab49d4f3.js"><link rel="prefetch" href="/assets/js/5.e19d1c20.js"><link rel="prefetch" href="/assets/js/6.5e86b234.js"><link rel="prefetch" href="/assets/js/7.df04ee3d.js"><link rel="prefetch" href="/assets/js/8.e01c6469.js"><link rel="prefetch" href="/assets/js/9.01847c33.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4b594c7e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>zhairuihao的blog 😀😀😀😀😀😀</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhairuihao</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="zhairuihao的blog 😀😀😀😀😀😀" class="logo"> <span class="site-name">zhairuihao的blog 😀😀😀😀😀😀</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/源码分析/" class="nav-link"><i class="iconfont undefined"></i>
+  源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="iconfont undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/spring/" class="nav-link"><i class="iconfont undefined"></i>
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/并发/" class="nav-link"><i class="iconfont undefined"></i>
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作总结/" class="nav-link"><i class="iconfont undefined"></i>
+  工作总结
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码片段/" class="nav-link"><i class="iconfont undefined"></i>
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JDK/" class="nav-link"><i class="iconfont undefined"></i>
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="iconfont undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travis/" class="nav-link"><i class="iconfont undefined"></i>
+  Travis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhairuihao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://zhairuihao.show/my-story/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  我的故事
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-b038cec6><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-b038cec6> <h3 class="name" data-v-b038cec6>
+    zhairuihao
+  </h3> <div class="num" data-v-b038cec6><div data-v-b038cec6><h3 data-v-b038cec6>22</h3> <h6 data-v-b038cec6>Article</h6></div> <div data-v-b038cec6><h3 data-v-b038cec6>21</h3> <h6 data-v-b038cec6>Tag</h6></div></div> <hr data-v-b038cec6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Java/" class="nav-link"><i class="iconfont undefined"></i>
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/categories/源码分析/" class="nav-link"><i class="iconfont undefined"></i>
+  源码分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/redis/" class="nav-link"><i class="iconfont undefined"></i>
+  redis
+</a></li><li class="dropdown-item"><!----> <a href="/categories/spring/" class="nav-link"><i class="iconfont undefined"></i>
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/categories/并发/" class="nav-link"><i class="iconfont undefined"></i>
+  并发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/工作总结/" class="nav-link"><i class="iconfont undefined"></i>
+  工作总结
+</a></li><li class="dropdown-item"><!----> <a href="/categories/代码片段/" class="nav-link"><i class="iconfont undefined"></i>
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/categories/JDK/" class="nav-link"><i class="iconfont undefined"></i>
+  JDK
+</a></li><li class="dropdown-item"><!----> <a href="/categories/linux/" class="nav-link"><i class="iconfont undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/categories/database/" class="nav-link"><i class="iconfont undefined"></i>
+  database
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Travis/" class="nav-link"><i class="iconfont undefined"></i>
+  Travis
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhairuihao" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://zhairuihao.show/my-story/index.html" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-other"></i>
+  我的故事
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Javascript模块化编程</span> <!----></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Javascript模块化编程</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>zhairuihao</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>Javascript模块化编程</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>ruanyifeng</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2017-08-16 12:00:00</span></i> <i class="iconfont reco-eye" data-v-484a899e><span id="/views/JavaScript/2017/2017-08-16-Javascript-module-edit.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-484a899e><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      JavaScript
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><blockquote><p>参考<a href="http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html" target="_blank" rel="noopener noreferrer">阮一峰的网络日志<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <blockquote><p>随着网站逐渐变成&quot;互联网应用程序&quot;，嵌入网页的Javascript代码越来越庞大，越来越复杂。
+<br> 网页越来越像桌面程序，需要一个团队分工协作、进度管理、单元测试等等......开发者不得不使用软件工程的方法，管理网页的业务逻辑。
+Javascript模块化编程，已经成为一个迫切的需求。理想情况下，开发者只需要实现核心的业务逻辑，其他都可以加载别人已经写好的模块。
+但是，Javascript不是一种模块化编程语言，它不支持&quot;类&quot;（class），更遑论&quot;模块&quot;（module）了。（正在制定中的ECMAScript标准第六版，将正式支持&quot;类&quot;和&quot;模块&quot;，但还需要很长时间才能投入实用。）
+Javascript社区做了很多努力，在现有的运行环境中，实现&quot;模块&quot;的效果。本文总结了当前＂Javascript模块化编程＂的最佳实践，说明如何投入实用。虽然这不是初级教程，但是只要稍稍了解Javascript的基本语法，就能看懂。</p></blockquote> <h3 id="一、原始写法"><a href="#一、原始写法" class="header-anchor">#</a> 一、原始写法</h3> <p><br>只要把不同的函数（以及记录状态的变量）简单地放在一起，就算是一个模块。</p> <div class="language- extra-class"><pre><code>function m1(){
+	//...
+}
+function m2(){ 
+	//...
+}
+</code></pre></div><p><br>上面的函数m1()和m2()，组成一个模块。使用的时候，直接调用就行了。
+这种做法的缺点很明显：&quot;污染&quot;了全局变量，无法保证不与其他模块发生变量名冲突，而且模块成员之间看不出直接关系。</p> <h3 id="二、对象写法"><a href="#二、对象写法" class="header-anchor">#</a> 二、对象写法</h3> <p><br>为了解决上面的缺点，可以把模块写成一个对象，所有的模块成员都放到这个对象里面。</p> <div class="language- extra-class"><pre><code>var module1 = new Object({
+	_count : 0,
+	m1 : function (){
+		//...
+	},
+	m2 : function (){
+		//...
+	}
+});
+</code></pre></div><p><br>上面的函数m1()和m2(），都封装在module1对象里。使用的时候，就是调用这个对象的属性。</p> <div class="language- extra-class"><pre><code>module1.m1();
+</code></pre></div><p><br>但是，这样的写法会暴露所有模块成员，内部状态可以被外部改写。比如，外部代码可以直接改变内部计数器的值。</p> <div class="language- extra-class"><pre><code>module1._count = 5;
+</code></pre></div><h3 id="三、立即执行函数写法"><a href="#三、立即执行函数写法" class="header-anchor">#</a> 三、立即执行函数写法</h3> <p><br>使用&quot;立即执行函数&quot;（Immediately-Invoked Function Expression，IIFE），可以达到不暴露私有成员的目的。</p> <div class="language- extra-class"><pre><code>var module1 = (function(){
+	var _count = 0;
+	var m1 = function(){
+		//...
+	};
+	var m2 = function(){
+		//...
+	};
+	return {
+		m1 : m1,
+		m2 : m2
+	};
+})();
+</code></pre></div><p><br>使用上面的写法，外部代码无法读取内部的_count变量。</p> <div class="language- extra-class"><pre><code>console.info(module1._count); //undefined
+</code></pre></div><p><br>module1就是Javascript模块的基本写法。下面，再对这种写法进行加工。</p> <h3 id="四、放大模式"><a href="#四、放大模式" class="header-anchor">#</a> 四、放大模式</h3> <p><br>如果一个模块很大，必须分成几个部分，或者一个模块需要继承另一个模块，这时就有必要采用&quot;放大模式&quot;（augmentation）。</p> <div class="language- extra-class"><pre><code>var module1 = (function (mod){
+	mod.m3 = function () {
+		//...
+	};
+	return mod;
+})(module1);
+</code></pre></div><p><br>上面的代码为module1模块添加了一个新方法m3()，然后返回新的module1模块。</p> <h3 id="五、宽放大模式（loose-augmentation）"><a href="#五、宽放大模式（loose-augmentation）" class="header-anchor">#</a> 五、宽放大模式（Loose augmentation）</h3> <p><br>在浏览器环境中，模块的各个部分通常都是从网上获取的，有时无法知道哪个部分会先加载。如果采用上一节的写法，第一个执行的部分有可能加载一个不存在空对象，这时就要采用&quot;宽放大模式&quot;。</p> <div class="language- extra-class"><pre><code>var module1 = ( function (mod){
+	//...
+	return mod;
+})(window.module1 || {});
+</code></pre></div><p><br>与&quot;放大模式&quot;相比，＂宽放大模式＂就是&quot;立即执行函数&quot;的参数可以是空对象。</p> <h3 id="六、输入全局变量"><a href="#六、输入全局变量" class="header-anchor">#</a> 六、输入全局变量</h3> <p>独立性是模块的重要特点，模块内部最好不与程序的其他部分直接交互。
+为了在模块内部调用全局变量，必须显式地将其他变量输入模块。</p> <div class="language- extra-class"><pre><code>var module1 = (function ($, YAHOO) {
+	//...
+})(jQuery, YAHOO);
+</code></pre></div><p><br>上面的module1模块需要使用jQuery库和YUI库，就把这两个库（其实是两个模块）当作参数输入module1。这样做除了保证模块的独立性，还使得模块之间的依赖关系变得明显。这方面更多的讨论，参见Ben Cherry的著名文章《JavaScript Module Pattern: In-Depth》。</p> <h3 id="七、模块的规范"><a href="#七、模块的规范" class="header-anchor">#</a> 七、模块的规范</h3> <p><br>先想一想，为什么模块很重要？
+因为有了模块，我们就可以更方便地使用别人的代码，想要什么功能，就加载什么模块。
+但是，这样做有一个前提，那就是大家必须以同样的方式编写模块，否则你有你的写法，我有我的写法，岂不是乱了套！考虑到Javascript模块现在还没有官方规范，这一点就更重要了。
+目前，通行的Javascript模块规范共有两种：CommonJS和AMD。我主要介绍AMD，但是要先从CommonJS讲起。</p> <h3 id="八、commonjs"><a href="#八、commonjs" class="header-anchor">#</a> 八、CommonJS</h3> <p><br>2009年，美国程序员Ryan Dahl创造了node.js项目，将javascript语言用于服务器端编程。
+这标志&quot;Javascript模块化编程&quot;正式诞生。因为老实说，在浏览器环境下，没有模块也不是特别大的问题，毕竟网页程序的复杂性有限；但是在服务器端，一定要有模块，与操作系统和其他应用程序互动，否则根本没法编程。
+node.js的模块系统，就是参照CommonJS规范实现的。在CommonJS中，有一个全局性方法require()，用于加载模块。假定有一个数学模块math.js，就可以像下面这样加载。</p> <div class="language- extra-class"><pre><code>var math = require('math');
+math.add(2,3); // 5
+</code></pre></div><p><br>因为这个系列主要针对浏览器编程，不涉及node.js，所以对CommonJS就不多做介绍了。我们在这里只要知道，require()用于加载模块就行了。</p> <h3 id="九、浏览器环境"><a href="#九、浏览器环境" class="header-anchor">#</a> 九、浏览器环境</h3> <p><br>有了服务器端模块以后，很自然地，大家就想要客户端模块。而且最好两者能够兼容，一个模块不用修改，在服务器和浏览器都可以运行。
+但是，由于一个重大的局限，使得CommonJS规范不适用于浏览器环境。还是上一节的代码，如果在浏览器中运行，会有一个很大的问题，你能看出来吗？</p> <p><br>第二行math.add(2, 3)，在第一行require('math')之后运行，因此必须等math.js加载完成。也就是说，如果加载时间很长，整个应用就会停在那里等。
+这对服务器端不是一个问题，因为所有的模块都存放在本地硬盘，可以同步加载完成，等待时间就是硬盘的读取时间。但是，对于浏览器，这却是一个大问题，因为模块都放在服务器端，等待时间取决于网速的快慢，可能要等很长时间，浏览器处于&quot;假死&quot;状态。
+因此，浏览器端的模块，不能采用&quot;同步加载&quot;（synchronous），只能采用&quot;异步加载&quot;（asynchronous）。这就是AMD规范诞生的背景。</p> <h3 id="十、amd"><a href="#十、amd" class="header-anchor">#</a> 十、AMD</h3> <p><br>AMD是&quot;Asynchronous Module Definition&quot;的缩写，意思就是&quot;异步模块定义&quot;。它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。
+AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：</p> <div class="language- extra-class"><pre><code>require([module], callback);
+</code></pre></div><p><br>第一个参数[module]，是一个数组，里面的成员就是要加载的模块；第二个参数callback，则是加载成功之后的回调函数。如果将前面的代码改写成AMD形式，就是下面这样：</p> <div class="language- extra-class"><pre><code>require(['math'], function (math) {
+　　　　math.add(2, 3);
+});
+</code></pre></div><p><br>math.add()与math模块加载不是同步的，浏览器不会发生假死。所以很显然，AMD比较适合浏览器环境。
+目前，主要有两个Javascript库实现了AMD规范：require.js和curl.js。</p> <h3 id="十一、require-js"><a href="#十一、require-js" class="header-anchor">#</a> 十一、require.js</h3> <p><br>使用require.js的第一步，是先去官方网站<a href="http://requirejs.org/docs/download.html" target="_blank" rel="noopener noreferrer">下载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>最新版本。
+下载后，假定把它放在js子目录下面，就可以加载了。</p> <div class="language- extra-class"><pre><code>&lt;script src=&quot;js/require.js&quot;&gt;&lt;/script&gt;
+</code></pre></div><p><br>有人可能会想到，加载这个文件，也可能造成网页失去响应。解决办法有两个，一个是把它放在网页底部加载，另一个是写成下面这样：</p> <div class="language- extra-class"><pre><code>&lt;script src=&quot;js/require.js&quot; defer async=&quot;true&quot; &gt;&lt;/script&gt;
+</code></pre></div><p><br>async属性表明这个文件需要异步加载，避免网页失去响应。IE不支持这个属性，只支持defer，所以把defer也写上。
+加载require.js以后，下一步就要加载我们自己的代码了。假定我们自己的代码文件是main.js，也放在js目录下面。那么，只需要写成下面这样就行了：</p> <div class="language- extra-class"><pre><code>&lt;script src=&quot;js/require.js&quot; data-main=&quot;js/main&quot;&gt;&lt;/script&gt;
+</code></pre></div><p><br>data-main属性的作用是，指定网页程序的主模块。在上例中，就是js目录下面的main.js，这个文件会第一个被require.js加载。由于require.js默认的文件后缀名是js，所以可以把main.js简写成main。</p> <h3 id="十二、主模块的写法"><a href="#十二、主模块的写法" class="header-anchor">#</a> 十二、主模块的写法</h3> <p><br>上一节的main.js，我把它称为&quot;主模块&quot;，意思是整个网页的入口代码。它有点像C语言的main()函数，所有代码都从这儿开始运行。
+下面就来看，怎么写main.js。
+如果我们的代码不依赖任何其他模块，那么可以直接写入javascript代码。</p> <div class="language- extra-class"><pre><code>// main.js
+alert(&quot;加载成功！&quot;);
+</code></pre></div><p><br>但这样的话，就没必要使用require.js了。真正常见的情况是，主模块依赖于其他模块，这时就要使用AMD规范定义的的require()函数。</p> <div class="language- extra-class"><pre><code>// main.js
+require(['moduleA', 'moduleB', 'moduleC'], function (moduleA, moduleB, moduleC){
+	// some code here
+});
+</code></pre></div><p><br>require()函数接受两个参数。第一个参数是一个数组，表示所依赖的模块，上例就是['moduleA', 'moduleB', 'moduleC']，即主模块依赖这三个模块；第二个参数是一个回调函数，当前面指定的模块都加载成功后，它将被调用。加载的模块会以参数形式传入该函数，从而在回调函数内部就可以使用这些模块。
+require()异步加载moduleA，moduleB和moduleC，浏览器不会失去响应；它指定的回调函数，只有前面的模块都加载成功后，才会运行，解决了依赖性的问题。
+下面，我们看一个实际的例子。
+假定主模块依赖jquery、underscore和backbone这三个模块，main.js就可以这样写：</p> <div class="language- extra-class"><pre><code>require(['jquery', 'underscore', 'backbone'], function ($, _, Backbone){
+	// some code here　　
+});
+</code></pre></div><p><br>require.js会先加载jQuery、underscore和backbone，然后再运行回调函数。主模块的代码就写在回调函数中。</p> <h3 id="十三、模块的加载"><a href="#十三、模块的加载" class="header-anchor">#</a> 十三、模块的加载</h3> <p><br>上一节最后的示例中，主模块的依赖模块是['jquery', 'underscore', 'backbone']。默认情况下，require.js假定这三个模块与main.js在同一个目录，文件名分别为jquery.js，underscore.js和backbone.js，然后自动加载。
+使用require.config()方法，我们可以对模块的加载行为进行自定义。require.config()就写在主模块（main.js）的头部。参数就是一个对象，这个对象的paths属性指定各个模块的加载路径。</p> <div class="language- extra-class"><pre><code>require.config({
+　　　　paths: {
+　　　　　　&quot;jquery&quot;: &quot;jquery.min&quot;,
+　　　　　　&quot;underscore&quot;: &quot;underscore.min&quot;,
+　　　　　　&quot;backbone&quot;: &quot;backbone.min&quot;
+　　　　}
+});
+</code></pre></div><p><br> 上面的代码给出了三个模块的文件名，路径默认与main.js在同一个目录（js子目录）。如果这些模块在其他目录，比如js/lib目录，则有两种写法。一种是逐一指定路径。另一种则是直接改变基目录（baseUrl）。
+如果某个模块在另一台主机上，也可以直接指定它的网址，比如：</p> <div class="language- extra-class"><pre><code>require.config({
+　　　　paths: {
+　　　　　　&quot;jquery&quot;: &quot;lib/jquery.min&quot;,
+　　　　　　&quot;underscore&quot;: &quot;lib/underscore.min&quot;,
+　　　　　　&quot;backbone&quot;: &quot;lib/backbone.min&quot;
+　　　　}
+　　});
+
+require.config({
+　　　　baseUrl: &quot;js/lib&quot;,
+　　　　paths: {
+　　　　　　&quot;jquery&quot;: &quot;jquery.min&quot;,
+　　　　　　&quot;underscore&quot;: &quot;underscore.min&quot;,
+　　　　　　&quot;backbone&quot;: &quot;backbone.min&quot;
+　　　　}
+　　});
+
+require.config({
+　　　　paths: {
+　　　　　　&quot;jquery&quot;: &quot;https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min&quot;
+　　　　}
+　　});
+</code></pre></div><p><br>require.js要求，每个模块是一个单独的js文件。这样的话，如果加载多个模块，就会发出多次HTTP请求，会影响网页的加载速度。因此，require.js提供了一个优化工具，当模块部署完毕以后，可以用这个工具将多个模块合并在一个文件中，减少HTTP请求数。</p> <h3 id="十四、amd模块的写法"><a href="#十四、amd模块的写法" class="header-anchor">#</a> 十四、AMD模块的写法</h3> <p><br>require.js加载的模块，采用AMD规范。也就是说，模块必须按照AMD的规定来写。
+具体来说，就是模块必须采用特定的define()函数来定义。如果一个模块不依赖其他模块，那么可以直接定义在define()函数之中。
+假定现在有一个math.js文件，它定义了一个math模块。那么，math.js就要这样写：</p> <div class="language- extra-class"><pre><code>// math.js
+　　define(function (){
+　　　　var add = function (x,y){
+　　　　　　return x+y;
+　　　　};
+　　　　return {
+　　　　　　add: add
+　　　　};
+　　});
+</code></pre></div><p><br>加载方法如下：</p> <div class="language- extra-class"><pre><code>// main.js
+require(['math'], function (math){
+　alert(math.add(1,1));
+});
+</code></pre></div><p><br>如果这个模块还依赖其他模块，那么define()函数的第一个参数，必须是一个数组，指明该模块的依赖性。</p> <div class="language- extra-class"><pre><code>define(['myLib'], function(myLib){
+	function foo(){
+		myLib.doSomething();
+	}
+	return {
+		foo : foo
+	};
+});
+</code></pre></div><p><br>当require()函数加载上面这个模块的时候，就会先加载myLib.js文件</p> <h3 id="十五、加载非规范的模块"><a href="#十五、加载非规范的模块" class="header-anchor">#</a> 十五、加载非规范的模块</h3> <p><br>理论上，require.js加载的模块，必须是按照AMD规范、用define()函数定义的模块。但是实际上，虽然已经有一部分流行的函数库（比如jQuery）符合AMD规范，更多的库并不符合。那么，require.js是否能够加载非规范的模块呢？
+回答是可以的。
+这样的模块在用require()加载之前，要先用require.config()方法，定义它们的一些特征。
+举例来说，underscore和backbone这两个库，都没有采用AMD规范编写。如果要加载它们的话，必须先定义它们的特征。</p> <div class="language- extra-class"><pre><code>require.config({
+　　　　shim: {
+　　　　　　'underscore':{
+　　　　　　　　exports: '_'
+　　　　　　},
+　　　　　　'backbone': {
+　　　　　　　　deps: ['underscore', 'jquery'],
+　　　　　　　　exports: 'Backbone'
+　　　　　　}
+　　　　}
+　　});
+</code></pre></div><p><br>require.config()接受一个配置对象，这个对象除了有前面说过的paths属性之外，还有一个shim属性，专门用来配置不兼容的模块。具体来说，每个模块要定义（1）exports值（输出的变量名），表明这个模块外部调用时的名称；（2）deps数组，表明该模块的依赖性。
+比如，jQuery的插件可以这样定义：</p> <div class="language- extra-class"><pre><code>　shim: {
+　　　　'jquery.scroll': {
+　　　　　　deps: ['jquery'],
+　　　　　　exports: 'jQuery.fn.scroll'
+　　　　}
+　　}
+</code></pre></div><h3 id="十六、require-js插件"><a href="#十六、require-js插件" class="header-anchor">#</a> 十六、require.js插件</h3> <p><br>require.js还提供一系列插件，实现一些特定的功能。
+domready插件，可以让回调函数在页面DOM结构加载完成后再运行。</p> <div class="language- extra-class"><pre><code>require(['domready!'], function (doc){
+　　　　// called once the DOM is ready
+　　});
+</code></pre></div><p><br>text和image插件，则是允许require.js加载文本和图片文件。</p> <div class="language- extra-class"><pre><code>define([
+　　　　'text!review.txt',
+　　　　'image!cat.jpg'
+　　　　],
+
+　　　　function(review,cat){
+　　　　　　console.log(review);
+　　　　　　document.body.appendChild(cat);
+　　　　}
+　　);
+</code></pre></div><p><br>类似的插件还有json和mdown，用于加载json文件和markdown文件。</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/7/2020, 3:12:30 AM</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.68da75db.js" defer></script><script src="/assets/js/3.0d533a50.js" defer></script><script src="/assets/js/1.0c609987.js" defer></script><script src="/assets/js/12.f53a01ae.js" defer></script>
+  </body>
+</html>
